@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Email Manager Pro</title>
+  <meta name="description" content="Privacy Policy for Email Manager Pro." />
+  <style>
+    :root {
+      --bg: #f7f1ea;
+      --panel: #fffaf4;
+      --ink: #221d18;
+      --muted: #6f6258;
+      --line: #ead9c8;
+      --accent: #b8612d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.72;
+    }
+    header, main, footer {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 26px 0;
+    }
+    a { color: var(--accent); font-weight: 700; }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; }
+    .brand { color: var(--ink); text-decoration: none; font-size: 20px; font-weight: 900; }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(24px, 5vw, 52px);
+      box-shadow: 0 24px 70px rgba(64, 45, 30, 0.1);
+    }
+    h1 { margin: 0 0 10px; font-size: clamp(36px, 6vw, 56px); line-height: 1; letter-spacing: -0.05em; }
+    h2 { margin-top: 34px; letter-spacing: -0.02em; }
+    p, li { color: var(--muted); }
+    code {
+      background: rgba(184, 97, 45, 0.08);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 2px 6px;
+      color: var(--ink);
+    }
+    footer { padding: 30px 0 46px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="./index.html">Email Manager Pro</a>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./terms.html">Terms of Use</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Privacy Policy</h1>
+      <p><strong>Last updated:</strong> May 11, 2026</p>
+
+      <h2>Overview</h2>
+      <p>
+        Email Manager Pro is a desktop email triage application. It stores mailbox data locally and only sends data
+        to third-party services when the user explicitly enables features that require them.
+      </p>
+
+      <h2>Data stored locally</h2>
+      <p>The app may store the following data on the user's device:</p>
+      <ul>
+        <li>Connected mailbox account metadata.</li>
+        <li>Email metadata and message content retrieved into the local client.</li>
+        <li>Attachments downloaded into the local app database.</li>
+        <li>Local app preferences.</li>
+        <li>Diagnostic events used for support and troubleshooting.</li>
+      </ul>
+
+      <h2>Gmail and Google user data</h2>
+      <p>
+        If the user connects a Gmail account, Email Manager Pro requests access only after the user starts the Google
+        sign-in flow and grants permission. Gmail data is used to display the user's mailbox inside the desktop app,
+        detect important messages, show notifications, manage attachments, and allow user-initiated replies.
+      </p>
+      <p>
+        Email Manager Pro does not sell Gmail data, does not use Gmail data for advertising, and does not transfer
+        Gmail data to third parties except as necessary to provide user-enabled features.
+      </p>
+
+      <h2>Secrets and credentials</h2>
+      <p>
+        Sensitive secrets are not intended to be stored as plain values in regular app settings files. The app uses
+        operating-system backed secret storage where supported for values such as mailbox secrets, OAuth tokens,
+        AI provider API keys, and Telegram bot tokens.
+      </p>
+
+      <h2>When data leaves the device</h2>
+      <p>User data leaves the device only when the user enables features that require external services, such as:</p>
+      <ul>
+        <li><strong>OAuth:</strong> provider login and token exchange occur with the relevant mailbox provider.</li>
+        <li><strong>Cloud AI:</strong> email content relevant to the analysis request may be sent to the configured AI provider.</li>
+        <li><strong>Telegram:</strong> notification text and reply workflow content may be sent to Telegram when enabled.</li>
+      </ul>
+
+      <h2>Local AI behavior</h2>
+      <p>
+        When Local AI is active, the app is intended to process analysis on-device. macOS uses the local MLX path and
+        Windows uses the local Ollama path. External cloud behavior only applies if the user separately enables cloud features.
+      </p>
+
+      <h2>Support reports</h2>
+      <p>
+        The app can export a support report for diagnostics. The report may include app and platform information,
+        mailbox status summaries, recent diagnostic events, and redacted AI settings. It is designed to avoid exporting
+        sensitive secrets such as API keys or Telegram bot tokens.
+      </p>
+
+      <h2>User choices</h2>
+      <p>Users control whether to connect or remove mailbox accounts and whether to enable Cloud AI, Local AI, or Telegram notifications.</p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions or support, contact:
+        <a href="mailto:guyguy_nok2000@yahoo.com">guyguy_nok2000@yahoo.com</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    Bundle identifier: <code>com.athir.EmailManagerPro</code>
+  </footer>
+</body>
+</html>
